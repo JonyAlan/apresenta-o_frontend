@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!-- Definindo o idioma padrão do documento e dir="ltr">Texto escrito da esquerda para a direita  left to right-->
+<html lang='pt-br' dir='ltr'> 
+
+<head>
+    <!-- codificação -->
+    <meta charset='UTF-8'>
+
+    <!-- viewport -->
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=0, user-scalable=no'>
+
+    <!-- titulo da página -->
+    <title>Música para todos - Spotify</title>
+
+    <!-- compartilhamento nos buscadores -->
+    <meta name='description' content='O Spotify é um serviço de música digital que dá acesso a milhões de músicas.'>
+    <meta name='keywords' content='Spotify, música, online, ouvir, transmissão, tocar, digital, álbum, artista, playlist'>
+
+    <!-- compartilhamento em redes sociais -->
+    <meta property='og:title' content='Música para todos.'>
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='https://www.spotify.com/br'>
+    <meta property='og:image' content='http://www.scdn.co/i/_global/open-graph-default.png'>
+    <meta property='og:image:secure_url' content='https://www.scdn.co/i/_global/open-graph-default.png'>
+    <meta property='og:description' content='O Spotify tem músicas para sua vida inteira.'>
+
+    <!-- compartilhamento no twitter -->
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:title' content='Música para todos.'>
+    <meta name='twitter:image' content='http://www.scdn.co/i/_global/twitter_card-default.jpg'>
+    <meta name='twitter:description' content='O Spotify tem músicas para sua vida inteira.'>
+
+    <!-- favicon -->
+    <link rel='shortcut icon' href='./assets/images/icons/favicon.png' />
+
+    <!-- css -->
+    <!-- <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- folha de estilo de redefinição é reduzir as inconsistências do navegador em itens como alturas de linha padrão,
+         margens e tamanhos de fonte dos títulos e assim por diante. -->
+    <link rel='stylesheet' href='./assets/styles/reset.css'>
+    <!-- folha de estilo personalizada -->
+    <link rel='stylesheet' href='./assets/styles/style.css'>
+</head>
+<body>
+    <header>
+        <div class='container'>
+            <div class='row'>
+                <div class='col  s4 m4 l4 header__logo'>
+                    <img src='./assets/images/logos/logo.svg' alt='Logo Spotify'>
+                </div>
+                <div class='col l8 s8 m8 header__nav'>
+                    <nav>
+                        <ul class="right">
+                            <li class='navItem premium'>
+                                <a href='' title='Seja Premium Spotify'>Premium</a>
+                            </li>
+                            <li class='navItem'>
+                                <a href='' title='Central de ajuda do Spotify'>Ajuda</a>
+                            </li>
+                            <li class='navItem'>
+                                <a href='' title='Download Spotify'>Baixar</a>
+                            </li>
+                            <li class='navItem --divider'></li>
+                            <li class='--avatar'>
+                                <!-- Imagem avatar -->
+                                <span >
+                                    <img src='./assets/images/default/avatar.jpg' alt='Avatar'> 
+                                </span>
+                            </li>
+                            <li class='--avatar'>
+                                <!-- Dropdown Trigger -->
+                                <a class='dropdown-trigger' href='#' data-target='perfil'>Perfil</a>
+                                
+                                <!-- Dropdown Structure -->
+                                <ul id='perfil' class='dropdown-content'>
+                                    <a class='dropdown-item' href='#' title='Minha Conta Spotify'>Conta</a>
+                                    <a class='dropdown-item --gray' href='#' title='Sair'>Sair</a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id='banner'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col l12'>
+                        <h1>Seja livre. Seja Premium.</h1>
+                        <h2>Experimente o Premium grátis por 3 meses. Depois, custa só R$ 16,90/mês.</h2>
+                        <a href='#' class='btn btn-default' title='Iniciar o teste premium Spotify'>
+                            Iniciar o testegrátis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id='albums'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-12 title'>
+                        <h2>É música que você quer?</h2>
+                        <h3>Continue curtindo suas favoritas de onde parou.</h3>
+                        <a href='#' class='btn btn-stroked'>Abrir o web player</a>
+                    </div>
+                </div>
+
+                <div class='row albums__items'>
+                    <figure class='col l4 s6 m6  albums__item'>
+                        <a href='#' title='Nome do Álbum'>
+                            <img src='./assets/images/albums/1.jpg' alt='Album Example'>
+
+                            <figcaption class='item__caption'>
+                                <div class='caption__title'>Playlist trap/rap Americano</div>
+                                <div class='caption__cta'>Escute agora</div>
+                            </figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class='col l4 s6 m6  albums__item'>
+                        <a href='#' title='Nome do Álbum'>
+                            <img src='./assets/images/albums/2.jpg' alt='Album Example'>
+
+                            <figcaption class='item__caption'>
+                                <div class='caption__title'>Old Town Road - Remix</div>
+                                <div class='caption__cta'>Escute agora</div>
+                            </figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class='col s6 m6 l4 albums__item'>
+                        <a href='#' title='Nome do Álbum'>
+                            <img src='./assets/images/albums/3.jpg' alt='Album Example'>
+
+                            <figcaption class='item__caption'>
+                                <div class='caption__title'>Nome do Álbum</div>
+                                <div class='caption__cta'>Escute agora</div>
+                            </figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class='col s6 m6 l4 albums__item'>
+                        <a href='#' title='Nome do Álbum'>
+                            <img src='./assets/images/albums/4.jpg' alt='Album Example'>
+
+                            <figcaption class='item__caption'>
+                                <div class='caption__title'>Nome do Álbum</div>
+                                <div class='caption__cta'>Escute agora</div>
+                            </figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class='col s6 m6 l4 albums__item'>
+                        <a href='#' title='Nome do Álbum'>
+                            <img src='./assets/images/albums/5.jpg' alt='Album Example'>
+
+                            <figcaption class='item__caption'>
+                                <div class='caption__title'>Nome do Álbum</div>
+                                <div class='caption__cta'>Escute agora</div>
+                            </figcaption>
+                        </a>
+                    </figure>
+
+                    <figure class='col s6 m6 l4 albums__item'>
+                        <a href='#' title='Nome do Álbum'>
+                            <img src='./assets/images/albums/6.jpg' alt='Album Example'>
+
+                            <figcaption class='item__caption'>
+                                <div class='caption__title'>Nome do Álbum</div>
+                                <div class='caption__cta'>Escute agora</div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class='container'>
+            <div class='row'>
+                <div class='col s12 m12 l8'>
+                    <div class='row'>
+                        <div class='col s4 m4 l3 footer__links'>
+                            <div class='links__title'>Empresa</div>
+
+                            <ul class="empresa">
+                                <li >
+                                    <a href='#' title='Sobre o Spotify'>Sobre</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='Encontre empregos no Spotify'>Empregos</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='For the Record'>For the Record</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class='col s4 m4 l3 footer__links'>
+                            <div class='links__title'>Comunidades</div>
+
+                            <ul class="comunidade">
+                                <li>
+                                    <a href='#' title='Para artistas Spotify'>Para Artistas</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='Desenvolvedores Spotify'>Desenvolvedores</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='Para marcas Spotify'>Marcas</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='Investidores Spotify'>Investidores</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='Fornecedores Spotify'>Fornecedores</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class='col s4 m4 l4 footer__links'>
+                            <div class='links__title'>Links Úteis</div>
+
+                            <ul class="links">
+                                <li>
+                                    <a href='#' title='Central de ajuda Spotify'>Ajuda</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='Ir para o player web Spotify'>Player da Web</a>
+                                </li>
+                                <li>
+                                    <a href='#' title='App do Spotify'>Aplicativo móvel grátis</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col s12 m12 l3'>
+                    <div class='row'>
+                        <div class='col-12 footer__social'>
+                            <a  title='Instagram Spotify'>
+                                <i class='fa fa-instagram' aria-hidden='true'></i>
+                            </a>
+                            <a  title='Twitter Spotify'>
+                                <i class='fa fa-twitter' aria-hidden='true'></i>
+                            </a>
+                            <a title='Facebook Spotify'>
+                                <i class='fa fa-facebook' aria-hidden='true'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col l12 footer_powerby'>
+                    Spotify 2019
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- javascript deve ficar no final, pois no momento do carregamento da página, 
+            o browser poderá bloquear o carregamento dos outros elementos até o javascript ser inteiramente interpretado.
+         No carregamento de qualquer página web, é muito importante que tudo que é mais relevante (código html e css)  
+         seja carregado o quanto antes para já trazer as informações para o usuário final. 
+    -->
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src='./assets/scripts/main.js'></script>
+</body>
+
+</html>
